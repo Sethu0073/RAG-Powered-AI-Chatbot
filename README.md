@@ -49,9 +49,67 @@ This chatbot uses the following workflow:
 
 ---
 
-### 2. Installation
+## 🛠️ Installation
 
-Clone this repository:  
-```bash
-git clone https://github.com/Sethu0073/RAG-Powered-AI-Chatbot.git
-cd RAG-Powered-AI-Chatbot
+2.  **Clone the repository:**
+
+    ```bash
+    git clone [https://github.com/Sethu0073/RAG-Powered-AI-Chatbot.git](https://github.com/Sethu0073/RAG-Powered-AI-Chatbot.git)
+    cd RAG-Powered-AI-Chatbot
+    ```
+
+3.  **Create a virtual environment:**
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+
+4.  **Install the dependencies:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5.  **Set up environment variables:**
+
+    Create a `.env` file in the root of the project and add your API keys:
+
+    ```
+    OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
+    ```
+
+## ▶️ Usage
+
+1.  **Add your documents:**
+
+    Place your PDF, TXT, or other supported documents in the `data` directory.
+
+2.  **Run the application:**
+
+    ```bash
+    streamlit run app.py
+    ```
+
+3.  **Open your browser:**
+
+    Navigate to `http://localhost:8501` to start chatting with your documents!
+
+## ⚙️ Configuration
+
+You can customize the chatbot's behavior by modifying the `config.py` file. This includes changing the LLM, the embedding model, and other parameters.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
+
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/your-feature`).
+3.  Make your changes.
+4.  Commit your changes (`git commit -m 'Add some feature'`).
+5.  Push to the branch (`git push origin feature/your-feature`).
+6.  Open a pull request.
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
